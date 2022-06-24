@@ -6,12 +6,6 @@ case ENV["BROWSER"]
 when "firefox"
   @driver = :selenium
 when "chrome"
-  require 'selenium-webdriver'
-Before do
-  Selenium::WebDriver::Chrome.driver_path="C:/chromedriver/chromedriver.exe"
-      $driver=Selenium::WebDriver.for(:chrome)
-
-end
   @driver = :selenium_chrome
 when "headless"
   Capybara.register_driver :selenium_chrome_headless do |app|
