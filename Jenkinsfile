@@ -1,8 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'ruby'
-            
+            image "ruby"
         }
     }
     
